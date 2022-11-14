@@ -22,8 +22,11 @@ const clearForm = event => {
   event.preventDefault();
   console.log(formData.email);
   console.log(formData.message);
+  formData.email = '';
+  formData.message = '';
   EMAIL.value = '';
   MESSAGE.value = '';
+
   localStorage.removeItem('feedback-form-state');
 };
 
